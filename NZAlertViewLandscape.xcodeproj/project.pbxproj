@@ -88,7 +88,7 @@
 			children = (
 				F859CA331861D08600CCB7A2 /* Example */,
 				F859C9EC1861CF7100CCB7A2 /* Frameworks */,
-				F859CA4B1861D0C800CCB7A2 /* NZAlertView */,
+				F859CA4B1861D0C800CCB7A2 /* NZAlertViewLandscape */,
 				F859C9EB1861CF7100CCB7A2 /* Products */,
 				11086BAAFF26FD88A1E04795 /* Pods */,
 			);
@@ -166,7 +166,7 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		F859CA4B1861D0C800CCB7A2 /* NZAlertView */ = {
+		F859CA4B1861D0C800CCB7A2 /* NZAlertViewLandscape */ = {
 			isa = PBXGroup;
 			children = (
 				F859CA521861D25700CCB7A2 /* NZAlertView.h */,
@@ -176,6 +176,7 @@
 				F8A639D0186677750098DFE1 /* Protocols */,
 				F8A639CD186677700098DFE1 /* Views */,
 			);
+			name = NZAlertViewLandscape;
 			path = NZAlertView;
 			sourceTree = "<group>";
 		};
