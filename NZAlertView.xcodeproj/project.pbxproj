@@ -27,8 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09DFC7FC69A2466817E24FD1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		31B23F63EA5240B7B9533DAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED5B1B6D1B534CC09B794588 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		7F5EC28E82F4DD8B16482AA7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F859C9EA1861CF7100CCB7A2 /* NZAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NZAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F859C9ED1861CF7100CCB7A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F859C9EF1861CF7100CCB7A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11086BAAFF26FD88A1E04795 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09DFC7FC69A2466817E24FD1 /* Pods.debug.xcconfig */,
+				7F5EC28E82F4DD8B16482AA7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F859C9E11861CF7100CCB7A2 = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +90,7 @@
 				F859C9EC1861CF7100CCB7A2 /* Frameworks */,
 				F859CA4B1861D0C800CCB7A2 /* NZAlertView */,
 				F859C9EB1861CF7100CCB7A2 /* Products */,
-				ED5B1B6D1B534CC09B794588 /* Pods.xcconfig */,
+				11086BAAFF26FD88A1E04795 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -412,7 +422,7 @@
 		};
 		F859CA1D1861CF7100CCB7A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED5B1B6D1B534CC09B794588 /* Pods.xcconfig */;
+			baseConfigurationReference = 09DFC7FC69A2466817E24FD1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -423,13 +433,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		F859CA1E1861CF7100CCB7A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED5B1B6D1B534CC09B794588 /* Pods.xcconfig */;
+			baseConfigurationReference = 7F5EC28E82F4DD8B16482AA7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -440,6 +451,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
