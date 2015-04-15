@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'NZAlertViewLandscape'
-  s.version      = '0.0.3'
+  s.version      = '0.0.4'
   s.summary      = 'It is a fork from NZAlertView that supports landscape orientation'
   s.homepage     = "https://github.com/javierM84/NZAlertView"
   s.license = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '6.0'
 
-  s.source = { :git => 'https://github.com/javierM84/NZAlertView.git', :tag => '0.0.3' }
+  s.source = { :git => 'https://github.com/javierM84/NZAlertView.git', :tag => '0.0.4' }
 
   s.resources = ['NZAlertView/NZAlertView-Icons.bundle', 'NZAlertView/Views/NZAlertView.xib']
 
