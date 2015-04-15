@@ -52,7 +52,7 @@ static BOOL IsPresenting;
                                     options:nil];
 
         CGRect frame = self.view.frame;
-        frame = CGRectMake(-(CGRectGetWidth([[UIScreen mainScreen] bounds]) / 2) + frame.size.width / 2, 0, CGRectGetWidth([[UIScreen mainScreen] bounds]), frame.size.height);
+        frame = CGRectMake(-(CGRectGetWidth([[UIScreen mainScreen] bounds]) / 2) + frame.size.width / 2, 0, frame.size.width, frame.size.height);
         self.view.bounds = frame;
         self.view.frame = frame;
         self.view.translatesAutoresizingMaskIntoConstraints = NO;
